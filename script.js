@@ -53,8 +53,7 @@ form.addEventListener("submit", async function (event) {
     } else {
       result.textContent = "Ошибка отправки. Попробуйте позже.";
     }
-  } catch (error) {
-    console.error("Ошибка:", error);
-    result.textContent = "Ошибка соединения. Попробуйте позже.";
-  }
-});
+ catch (error) {
+  console.error("FULL ERROR:", error);
+  alert(error.message);
+}
